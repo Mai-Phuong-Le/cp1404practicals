@@ -3,15 +3,23 @@ Program to calculate and display a user's bonus based on sales.
 If sales are under $1,000, the user gets a 10% bonus.
 If sales are $1,000 or over, the bonus is 15%.
 """
+"""
+while sales
+print bonus get sales
+do next thing
+calculate bonus (this line is intentionally incomplete pseudocode)
+do next thing
+"""
+SALE_THRESHOLD = 1000
+LOW_DISCOUNT_RATE = 0.1
+HIGH_DISCOUNT_RATE = 0.15
 
 sales = float(input("Enter sales: $"))
-while sales < 0:
-    print("Invalid input")
-    sales = float(input("Enter sales: $"))
-    if sales < 1000:
-        bonus_amount = 0.1 * sales
+while sales >=0:
+    if sales < SALE_THRESHOLD:
+        discount_rate = LOW_DISCOUNT_RATE
     else:
-        bonus_amount = 0.15 * sales
-    print(f"Bonus: {bonus_amount:.0f}")
+        discount_rate = HIGH_DISCOUNT_RATE
 
-
+    print("Bonus =$", sales * discount_rate, sep="")
+    sales = float(input("Enter sales:"))
