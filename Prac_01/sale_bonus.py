@@ -22,4 +22,5 @@ while sales >=0:
         discount_rate = HIGH_DISCOUNT_RATE
 
     print("Bonus =$", sales * discount_rate, sep="")
+
     sales = float(input("Enter sales:"))
