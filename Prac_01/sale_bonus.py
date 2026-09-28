@@ -10,6 +10,7 @@ do next thing
 calculate bonus (this line is intentionally incomplete pseudocode)
 do next thing
 """
+
 SALE_THRESHOLD = 1000
 LOW_DISCOUNT_RATE = 0.1
 HIGH_DISCOUNT_RATE = 0.15

@@ -1,3 +1,4 @@
+
 PASSWORD_LENGTH = 10
 
 def main():

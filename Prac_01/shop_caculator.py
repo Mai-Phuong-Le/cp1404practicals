@@ -1,4 +1,5 @@
 """shop_caculator"""
+
 total = 0
 DISCOUNT_THRESHOLD = 100
 DISCOUNT_RATE = 0.9
