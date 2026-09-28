@@ -1,7 +1,9 @@
 """menus"""
-name = input("Enter your name: ")
 print("(H)ello\n(G)oodbye\n(Q)uit")
-choice = input()
+
+name = input("Enter your name: ")
+
+choice = input().upper()
 while choice != "Q":
     if choice == "H":
         print(f"Hello {name}")
