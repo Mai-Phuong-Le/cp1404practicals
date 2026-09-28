@@ -8,8 +8,7 @@ for i in range(20,1,-1):
     print(i, end=' ')
 #c
 number_of_stars = int(input("Enter number of stars: "))
-for i in range(number_of_stars):
-    print(i, end=' ')
+print("*" * number_of_stars)
 # d
 number_of_lines = int(input("Number of lines: "))
 
