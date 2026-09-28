@@ -4,20 +4,18 @@ Program to determine score status
 """
 import random
 def main():
+    """Determine the score status"""
     score = float(input("Enter score: "))
     result = get_score(score)
 
     print(f"User score {score} is {result}")
-
-    if result == "Excellent":
-        print("You get a prize!")
 
     random_score = random.randint(0, 100)
     random_result = get_score(random_score)
 
     print(f"Random: {random_score} = {random_result}")
 
-def get_score(score):
+def get_score(score: float):
     if score < 0 or score > 100:
         return "Invalid score"
     elif score >= 90:
@@ -27,5 +25,4 @@ def get_score(score):
     else:
         return "Bad"
 
-if __name__ == "__main__":
-    main()
+main()
