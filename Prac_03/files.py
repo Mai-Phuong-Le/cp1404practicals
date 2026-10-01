@@ -1,7 +1,10 @@
 with open("numbers.txt", "r") as in_file:
-    first_number = int(in_file.readline())
-    second_number = int(in_file.readline())
+    lines = in_file.readlines()
+    total = 0
 
-print(first_number + second_number)
+    for line in lines:
+        total += int(line)
+
+print(total)
 
 
