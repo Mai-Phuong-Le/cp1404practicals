@@ -1,5 +1,7 @@
-in_file = open("name.txt", "r")
-line = in_file.readline()
-print(f"Hi {line}!")
-in_file.close()
+with open("numbers.txt", "r") as in_file:
+    first_number = int(in_file.readline())
+    second_number = int(in_file.readline())
+
+print(first_number + second_number)
+
 
