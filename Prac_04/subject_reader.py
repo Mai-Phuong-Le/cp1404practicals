@@ -12,7 +12,7 @@ def main():
     display_subjects(subjects)
 
 
-def load_data(filename=FILENAME):
+def load_subject_data(filename=FILENAME):
     """Read data from file formatted like: subject,lecturer,number of students."""
     subject_data = []
     input_file = open(filename)
