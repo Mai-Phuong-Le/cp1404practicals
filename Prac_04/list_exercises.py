@@ -1,4 +1,9 @@
-numbers = [int(input("Number: ")) for i in range(5)]
+# numbers = [int(input("Number: ")) for i in range(5)]
+numbers = []
+for i in range(1,6):
+    number = int(input(f"Enter number {i}: "))
+    numbers.append(number)
+print(numbers)
 
 print(f"The first number is {numbers[0]}")
 print(f"The last number is {numbers[-1]}")
