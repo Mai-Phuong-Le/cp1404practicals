@@ -36,9 +36,16 @@ print(lowercase_full_names)
 
 almost_numbers = ['0', '10', '21', '3', '-7', '88', '9']
 # TODO: list comprehension to create a list of integers from the above list of strings
-# numbers =
+# numbers = []
+
 numbers = [int(number) for number in almost_numbers]
 print(numbers)
+
+# cach 2
+# for number in almost_numbers:
+#     number = int(number)
+#     numbers.append(number)
+# print(numbers)
 
 # TODO: list comprehension to create a list of only the numbers that are
 # greater than 9 from the numbers (not strings) you just created
@@ -49,3 +56,9 @@ print(large_numbers)
 # the result should be: 'Harlem, Hendrix, Lovelace'
 last_names = ", ".join([name.split()[1] for name in full_names if len(name) > 11])
 print(last_names)
+
+# cách 2
+# dùng split thay cho find
+# print(", ".join([name[name.find(" ") + 1:len(name)] for name in full_names if len(name) > 11]))
+# cách 3
+# print(", ".join(name.spilt(" ")[1] for name in full_names if len(name) > 11))
