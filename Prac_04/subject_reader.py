@@ -12,15 +12,18 @@ def main():
     display_subjects(subjects)
 
 
-def load_subject_data(filename=FILENAME):
+def load_subject_data():
     """Read data from file formatted like: subject,lecturer,number of students."""
     subject_data = []
-    input_file = open(filename)
+    input_file = open(FILENAME)
     for line in input_file:
+        # print(line) see what a line looks like
+        # print(repr(line)) see what a line really looks like
         line = line.strip()  # Remove the \n
         parts = line.split(',')  # Separate the data into its parts
 
         subject = [parts[0], parts[1], int(parts[2])]
+        # parts[2] = int(parts[2])
         subject_data.append(subject)
 
     input_file.close()
