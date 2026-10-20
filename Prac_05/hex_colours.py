@@ -4,7 +4,7 @@ CP1404/CP5632 Practical
 Hexadecimal colours
 """
 
-COLOUR_TO_HEX = {
+COLOUR_TO_CODE = {
     "aliceblue": "#f0f8ff",
     "antiquewhite": "#faebd7",
     "black": "#000000",
@@ -17,12 +17,14 @@ COLOUR_TO_HEX = {
     "white": "#ffffff"
 }
 
-colour_name = input("Enter colour name: ").lower()
+print(COLOUR_TO_CODE)
+colour_name = input("Enter colour name: ").title()
 
 while colour_name != "":
     try:
-        print(COLOUR_TO_HEX[colour_name])
+        print(colour_name, "is", COLOUR_TO_CODE[colour_name])
     except KeyError:
         print("Invalid colour name")
+        colour_name = input("Enter colour name: ").title()
 
-    colour_name = input("Enter colour name: ").lower()
+print(COLOUR_TO_CODE)
