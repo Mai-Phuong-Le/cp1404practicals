@@ -7,10 +7,7 @@ File needs reformatting
 # TODO: Reformat this file so the dictionary code follows PEP 8 convention
 CODE_TO_NAME = {"QLD": "Queensland", "NSW": "New South Wales", "NT": "Northern Territory", "WA": "Western Australia",
                 "ACT": "Australian Capital Territory", "VIC": "Victoria", "TAS": "Tasmania", "SA": "South Australia"}
-print(CODE_TO_NAME)
-
-for state_code, state_name in CODE_TO_NAME.items():
-    print(f"{state_code:3} is {state_name}")
+print(CODE_TO_NAME) # get dictionary
 
 state_code = input("Enter short state: ").upper()
 
@@ -21,3 +18,6 @@ while state_code != "":
         print("Invalid short state")
 
     state_code = input("Enter short state: ").upper()
+
+for state_code, state_name in CODE_TO_NAME.items():
+    print(f"{state_code:<3} is {state_name:>6}")
